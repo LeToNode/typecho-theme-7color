@@ -1,5 +1,3 @@
-README.markdown
-
 Typecho主题--7color
 ===================
 
