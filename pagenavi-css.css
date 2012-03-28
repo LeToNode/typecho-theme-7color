@@ -1,0 +1,29 @@
+.wp-pagenavi {
+	background:#FAFDEC;
+	margin:1px;
+	padding:6px 10px;
+	list-style: none;
+}
+.wp-pagenavi a {
+	padding:6px 8px; 
+	text-decoration:none;
+}
+.wp-pagenavi a:hover {	
+	text-decoration:none;
+	background:#DEECBE;
+}
+
+.wp-pagenavi li {
+	display: inline;
+	list-style:none;
+	margin:2px 9px 2px 0;
+}
+
+.wp-pagenavi li.current {
+	background:#FFF;
+	padding:6px 8px; 
+	font-weight:bold;
+}
+.wp-pagenavi li.extend {
+	margin:2px 4px;
+}

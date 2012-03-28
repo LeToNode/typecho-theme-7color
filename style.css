@@ -1,0 +1,537 @@
+﻿/*
+THEME NAME: 7Color
+THEME URI: http://nishuang.de/theme/7color/
+DESCRIPTION: Simple, Clean theme with Colorful head. Full width layout. Compatible with WordPress 2.7+
+VERSION: 1.0.2
+AUTHOR:  Ni Shuang
+AUTHOR URI: http://nishuang.de/
+TAGS: White, Blue, flexible-width, two-columns, left-sidebar
+*/
+
+/*Common CSS*/
+	body {margin:0px;padding:0px;font-size:14px;line-height:1.7;font-family:verdana;color:#222;}
+	a,a:visited {text-decoration:none;color:#1166cc;}
+	a:hover {text-decoration:underline;color:#1166cc;}
+	li h3 {color:#222;}
+	li {color:#bbddff;}
+	hr {height:1px;color:#ccccff;}
+	
+	pre {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	}
+
+/*
+LAYOUT: Two-Column (Left)
+DESCRIPTION: Two-column fluid layout with one sidebars left of content
+*/
+	div#container {
+	float:right;
+	margin:0 0 0 -260px;
+	width:100%;
+	background-image:url(images/bg_container.gif);background-repeat : repeat-x;
+	}
+
+	div#container,div#primary {
+	padding-top:40px;
+	}
+
+	div#content {
+	margin:0 0 0 260px;
+	border-left:1px solid #dddddd;
+	padding:0px 5px;
+	}
+
+	div.sidebar {
+	float:left;
+	overflow:hidden;
+	width:230px;
+	padding:5px 10px 5px 20px;
+	font-size:12px;
+	}
+
+	div#secondary {
+	clear:left;
+	}
+
+	div#footer {
+	clear:both;
+	width:100%;
+	}
+
+/*Head*/
+	div#header A,div#header A:visited {color:#ffffff;text-decoration:none;}
+
+	div#header{
+	border-top:4px solid #000;
+	background-color:#0196d6;
+	color:#ffffff;background-image:url(images/bg_header.jpg);background-position :left bottom;background-repeat : no-repeat;
+	height:95px;
+	}
+
+	h1#blog-title{
+	position:absolute;
+	float:left;
+	font-family:微软雅黑,calibri,verdana;
+	font-size:34px;
+	font-weight:normal;
+	line-height:36px;margin:30px 20px;
+	float:left;
+	}
+	
+	div#search{
+	position:absolute;
+	float:left;
+	padding:32px 0px 0px 726px;
+	}
+	
+	#search-input {width:182px;height:28px;padding:2px 0px 2px 25px;background:url("images/search-input.png") 0 0 no-repeat;}
+	#search-input-input {height:16px;width:115px;background-image:url(images/bg_container.gif);background-repeat : repeat-x;background-position :left -8px;padding-top:3px;border:solid 1px #cccccc;}
+	#search-submit {border-width:0px;background: transparent;cursor: pointer;font-size:12px;color:#fff;font-weight:bold;margin:3px 3px;padding:0px;font-family:verdana;}
+
+
+/*Menu*/
+	div#menu {
+	/*font-family:Microsoft YaHei,calibri,verdana;*/
+	background-color:#0078cd;
+	background-image:url(images/bg_menu.jpg);background-position :left top;background-repeat : no-repeat;
+	height:30px;
+	padding-left:10px;
+	text-align:left;
+	}
+
+	div#menu ul, div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
+	float:left;
+	}
+
+	div#menu ul,div#menu ul ul {
+	line-height:1;
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	}
+
+	div#menu ul a {
+	color:#ffffff;
+	display:block;
+	padding:8px 10px;
+	text-decoration:none;
+	}
+
+	div#menu ul ul ul a {
+	font-style:italic;
+	}
+
+	div#menu ul li ul {
+	left:-999em;
+	position:absolute;
+	}
+
+	div#menu ul li:hover ul {
+	left:auto;
+	}
+
+	div#menu ul li ul,div#menu ul li li {display:none;}
+	.rss{
+	position:absolute;
+	float:left;
+	width:16px;height:24px;
+	background-image:url(images/rss.png);background-position:60px 8px;background-repeat : no-repeat;
+	padding:0px 0px 0px 70px;
+	}
+
+/*Category*/
+	div#category_description {
+	padding-bottom:30px;}
+	
+	div#category_description p{
+	padding:0px;margin:0px;line-height:1;
+	}
+
+	div#category_description h2{
+	margin-top:4px;
+	line-height:1;
+	}
+
+	div#category_description .archive-meta{
+	font-size:28px;
+	font-weight:normal;
+	line-height:1;
+	color:#999999;
+	}
+
+	div#category_description small
+	{margin-left:54px;font-size:12px;}
+
+
+/*Content*/
+	h2{
+	font-family:微软雅黑,verdana;
+	font-size:34px;
+	font-weight:normal;
+	line-height:1.2;
+	margin:0px 0px 8px 0px;
+	}
+
+	h2 span {color:#dd0000;font-family:verdana;font-size:36px;
+	}
+
+	.entry-title,.entry-meta {
+	clear:both;
+	}
+
+	.entry-title{
+	margin-left:20px;
+	}
+
+	.entry-content{
+	background-image:url(images/bg_post.gif);background-repeat : repeat-x; background-position:left 2px;
+	border-top:1px solid #dddddd;
+	padding:10px 20px;
+	margin:0px 5px 70px 5px;
+	}
+
+	.entry-content-width,.navigation {width:660px;_overflow:hidden;}
+	.navigation {padding:0px 20px;}
+
+	.entry-content h2{
+	font-family:verdana;
+	font-size:24px;
+	font-weight:normal;
+	line-height:1;
+	}
+
+	.entry-content li{
+	color:#222;}
+
+	.related_post li{
+	color:#ffcc33;}
+
+
+	.entry-meta {
+	font-size:12px;color:#999999;
+	margin-bottom:20px;
+	}
+
+	.meta-nav {
+	color:#55aa22;font-weight:bold;}
+
+	.cat {
+	width:13px;height:13px;background-image:url(images/icon_cat.gif);background-repeat : no-repeat;float:left;margin:4px 4px 4px 0px;
+	}
+
+	.info {
+	width:48px;height:58px;background-position:left top;background-image:url(images/icon_info.png);background-repeat : no-repeat;float:left;margin:0px 4px 10px 0px;
+	}
+	
+	
+	div#content #search{
+	float:left;
+	padding:0px;
+	}
+
+
+/* comments */
+	div.comments ol li {
+	margin:10px 0px;font-size:12px;
+	color:#333333;
+	}
+
+	div.comments p {
+	line-height:1.2;}
+
+	div.comments li{
+	background-color: #f9f9fa;border:1px solid #eeeef0;padding:10px 20px 10px 20px;margin:0px;
+	list-style-position: outside;
+	}
+
+	div.comments li li{
+	background-color: #ffffff;border:1px solid #f3f3f5;padding:10px;margin:5px 0px;
+	list-style-type:none;
+	list-style-position: outside;
+	}
+
+	#cancel-comment-reply {display:none;}
+
+	div.comment-meta,div.comment-meta a,div.comment-meta a:visited{
+	color:#999999;line-height:1.2;
+	}
+
+	div.comment-content P
+	{margin:10px 0px;padding:0px;}
+
+	div.comment-author_vcard img{float:right;}
+
+	div.comment-author_vcard {font-weight:bold;}
+
+	textarea#comment {
+	height:13em;
+	margin:0 0 0.5em;
+	overflow:auto;
+	width:340px;height:150px;
+	}
+
+	
+/*Footer*/
+	div#footer-border {
+	width:100%;height:40px;text-align:center;
+	margin-top:20px;
+	background-image:url(images/bg_post_2.gif);background-repeat : repeat-x;
+	clear:both;
+	}
+
+	div#footer{
+	overflow:visible;
+	background-color:#005599;
+	padding:20px 0px 0px 0px;
+	font-size:12px;
+	clear:both;
+	background-image:url(images/bg_footer.png);background-repeat : repeat-x;
+	margin-left:auto; margin-right:auto;text-align:center;
+	}
+
+	div#footer-3rd {
+	margin-left:auto; margin-right:auto;text-align:center;
+	width:925px;
+	}
+	
+	
+	div#footer  .footer-bar{
+	text-align:left;
+	float:left;
+	margin:0px 0px 20px 20px;
+	padding:0px;
+	width:280px;
+	}
+
+	div#footer ul{
+	text-align:left;
+	float:left;
+	margin:0px 0px 0px 0px;
+	padding-left:10px;
+	list-style-type:none;
+	}
+
+	div#footer li {
+	font-size:12px;
+	color:#6699ff;
+	}
+
+	div#footer li li{list-style-type:disc;}
+
+	div#footer li a,div#footer li a:visited {color:#ddeeff;}
+	
+	#footer-text {
+	clear:both;
+	margin-left:auto; margin-right:auto;text-align:center;
+	padding:20px;
+	width:600px;
+	color:#99ccff;
+	}
+
+	#footer-text a,#footer-text a:visited{color:#99ccff;}
+
+/*Others*/
+	div.skip-link {
+	position:absolute;
+	right:1em;
+	top:1em;
+	}
+	input#author,input#email,input#url{
+	width:50%;
+	}
+
+	
+	#searchform #s {
+	height:19px;width:120px;
+	background-image:url(images/bg_container.gif);background-repeat : repeat-x;
+	background-position :left -8px;
+	border-top:solid 1px #666666;border-left:solid 1px #666666;border-right:solid 1px #cccccc;border-bottom:solid 1px #cccccc;
+	}
+
+	div#nav-above {
+	margin-bottom:1em;
+	}
+
+	div#nav-below {
+	margin-top:1em;
+	}
+
+	div#nav-images {
+	height:150px;
+	margin:1em 0;
+	}
+
+	div.navigation {
+	height:1.25em;
+	}
+
+	div.navigation div.nav-next {
+	float:right;
+	text-align:right;
+	}
+	
+/* Posts Navigation */
+ol.pages {
+	margin: 10px 0;
+	color: #666;
+	list-style: none;
+	font-size: 12px;
+}
+
+ol.pages li {
+	margin: 0 5px 0 0;
+	display: inline;
+}
+
+ol.pages li a {
+	background-position: 50% bottom; 
+	border-bottom: #ccdbe4 3px solid;
+	padding: 2px 6px;
+	margin-right: 4px;
+	text-decoration: none
+}
+
+ol.pages li.current a {
+	padding: 2px 6px;
+	font-weight: bold;
+	color: #86942A;
+	border-bottom: #86942A 3px solid;
+	margin-right: 4px;
+}
+	
+	
+/*Sidebar*/
+
+
+	
+	div.sidebar h3 {
+	font-size:1.2em;
+	}
+
+	div.sidebar input#s {
+	width:7em;
+	}
+
+	div.sidebar li {
+	list-style:none;
+	margin:0 0 2em;
+	}
+
+	div.sidebar li form {
+	margin:0.2em 0 0;
+	padding:0;
+	}
+
+	div.sidebar ul ul {
+	margin:0 0 0 25px;
+	}
+
+	div.sidebar ul ul li {
+	list-style:disc;
+	margin:0;
+	}
+
+	div.sidebar ul ul ul {
+	margin:0 0 0 0.5em;
+	}
+
+	div.sidebar ul ul ul li {
+	list-style:circle;
+	}
+
+	div.sidebar span {color:#333333;}
+
+	div.sidebar img {border-width:0px;}
+
+/*Gallery*/
+
+	div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
+	margin:0;
+	padding:0;
+	}
+
+
+	.alignright,img.alignright{
+	float:right;
+	margin:1em 0 0 1em;
+	}
+
+	.alignleft,img.alignleft{
+	float:left;
+	margin:1em 1em 0 0;
+	}
+
+	.aligncenter,img.aligncenter{
+	display:block;
+	margin:1em auto;
+	text-align:center;
+	}
+
+	div.gallery {
+	clear:both;
+	height:180px;
+	margin:1em 0;
+	width:100%;
+	}
+
+	p.wp-caption-text{
+	font-style:italic;
+	}
+
+	div.gallery dl{
+	margin:1em auto;
+	overflow:hidden;
+	text-align:center;
+	}
+
+	div.gallery dl.gallery-columns-1 {
+	width:100%;
+	}
+
+	div.gallery dl.gallery-columns-2 {
+	width:49%;
+	}
+
+	div.gallery dl.gallery-columns-3 {
+	width:33%;
+	}
+
+	div.gallery dl.gallery-columns-4 {
+	width:24%;
+	}
+
+	div.gallery dl.gallery-columns-5 {
+	width:19%;
+	}
+
+/* Page Navigation*/
+	.navigation {
+	margin:10px 0px;
+	 padding-top:15px;
+	 padding-bottom:2px;/*visivility-IE*/
+	 border:1px solid #fff;
+	}
+	.alignleft {
+	 float:left;
+	}
+	.alignright {
+	 float:right;
+	}
+	.aligncenter, div.aligncenter {
+	 display: block;
+	 margin:0 auto;
+	}
+
+
+#respond .cancel-comment-reply{
+	display: none;
+}
+ol#comments-list li #respond .cancel-comment-reply {
+	display: inline;
+}
+
